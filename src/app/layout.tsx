@@ -5,14 +5,14 @@ import './globals.css';
 // components
 import Navbar from '@/components/Navbar';
 import Providers from './providers';
-import { getData } from '@/data/data';
+import { getData, getExperienceYears } from '@/data/data';
 
 const fontMono = JetBrains_Mono({
 	subsets: ['latin'],
 });
 
 const data = getData();
-const experienceYears = new Date().getFullYear() - new Date(data.careerStart).getFullYear();
+const experienceYears = getExperienceYears(data.careerStart);
 
 export const metadata: Metadata = {
 	title: data.name,
