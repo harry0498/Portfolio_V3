@@ -5,7 +5,7 @@ export default async function Skills() {
 	const skills = getSkills();
 
 	return (
-		<main>
+		<div>
 			<h2 className="text-primary my-6">Skills/</h2>
 			<div className="flex flex-wrap flex-row grow gap-8 items-start justify-start">
 				{skills.map((skill) => (
@@ -20,6 +20,6 @@ export default async function Skills() {
 					</div>
 				))}
 			</div>
-		</main>
+		</div>
 	);
 }

@@ -6,7 +6,7 @@ export default function About() {
   const linuxYears = today.getFullYear() - linuxStart.getFullYear();
 
   return (
-    <main>
+    <div>
       <h2 className="text-primary my-6">About_Me/</h2>
       <p>
         My name is <mark>Harry Jenkins</mark>. I am a <mark>Full Stack Developer</mark>{" "}
@@ -30,6 +30,6 @@ export default function About() {
         various projects, which allows me to combine creativity with technology. I am also
         studying <mark>Bahasa Indonesia</mark> and have a basic understanding of it.
       </p>
-    </main>
+    </div>
   );
 }

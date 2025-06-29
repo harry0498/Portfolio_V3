@@ -11,7 +11,7 @@ export default function Project({ project }: { project: TProject }) {
 	// const height = details.image.height;
 
 	return (
-		<main>
+		<div>
 			{/* <Image
 				className="mb-8 rounded-2xl"
 				src={`https://${project.img?.fields.file?.url}`}
@@ -47,6 +47,6 @@ export default function Project({ project }: { project: TProject }) {
 					</div>
 				)}
 			</div>
-		</main>
+		</div>
 	);
 }
