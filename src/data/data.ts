@@ -1,5 +1,7 @@
 import data from '@/data/data.json';
 
+const today = new Date();
+
 export function getData() {
 	return data;
 }
@@ -12,10 +14,12 @@ export function getSkills(): TSkill[] {
 }
 
 export function getProjects(): TProject[] {
-	return Object.entries(data.projects).map(([key, value]) => ({
-		...value,
-		title: key,
-	}));
+	return data.projects;
+}
+
+export function getExperienceYears(date: string): number {
+	const start = new Date(date);
+	return today.getFullYear() - start.getFullYear();
 }
 
 export type TProject = (typeof data.projects)[number];

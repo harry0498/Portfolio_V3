@@ -5,14 +5,18 @@ import './globals.css';
 // components
 import Navbar from '@/components/Navbar';
 import Providers from './providers';
+import { getData } from '@/data/data';
 
 const fontMono = JetBrains_Mono({
 	subsets: ['latin'],
 });
 
+const data = getData();
+const experienceYears = new Date().getFullYear() - new Date(data.careerStart).getFullYear();
+
 export const metadata: Metadata = {
-	title: 'Harry Jenkins',
-	description: 'Hello, I am a Full Stack Developer with 4 years of experience',
+	title: data.name,
+	description: `Hello, I am a ${data.jobTitle} with ${experienceYears} years of experience`,
 	icons: {
 		icon: '/favicon.svg',
 	},
