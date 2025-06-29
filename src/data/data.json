@@ -1,0 +1,25 @@
+{
+	"name": "Harry Jenkins",
+	"jobTitle": "Full Stack Developer",
+	"email": "contact@harryj.dev",
+	"careerStart": "2020-08-20",
+	"linuxStart": "2017-01-01",
+	"github": "https://github.com/harry0498",
+	"projects": [
+		{
+			"title": "PkgMon",
+			"description": "System to monitor packages on Debian/Ubuntu-based servers.",
+			"url": "https://pkgmon.com",
+			"git": "https://github.com/PkgMon/pkgmon",
+			"img": "pkgmon"
+		}
+	],
+	"skills": {
+		"Languages": ["Golang", "Python", "Bash", "C/C++", "Lua"],
+		"Web Dev": ["JavaScript", "TypeScript", "PHP", "HTML", "CSS", "React", "Angular"],
+		"Databases": ["MongoDB", "MySQL"],
+		"DevOps": ["Linux", "Proxmox", "Docker"],
+		"Version Control": ["Git", "GitHub"],
+		"Docs": ["LaTeX", "Markdown"]
+	}
+}
