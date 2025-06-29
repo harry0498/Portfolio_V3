@@ -1,25 +1,10 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { TProject } from '@/data/data';
 
 export default function Project({ project }: { project: TProject }) {
-	// const details = project.img?.fields.file?.details as {
-	// 	image: { width: number; height: number };
-	// };
-
-	// const width = details.image.width;
-	// const height = details.image.height;
-
 	return (
 		<div>
-			{/* <Image
-				className="mb-8 rounded-2xl"
-				src={`https://${project.img?.fields.file?.url}`}
-				alt={project.title}
-				width={width}
-				height={height}
-				quality={100}
-			/> */}
+			<img src={`/${project.img}`} alt={project.title} className="mb-8 rounded-2xl" />
 
 			<div>
 				<mark>{project.title}</mark> - {project.description}

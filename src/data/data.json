@@ -11,7 +11,7 @@
 			"description": "System to monitor packages on Debian/Ubuntu-based servers.",
 			"url": "https://pkgmon.com",
 			"git": "https://github.com/PkgMon/pkgmon",
-			"img": "pkgmon"
+			"img": "pkgmon.png"
 		}
 	],
 	"skills": {
