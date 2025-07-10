@@ -13,7 +13,7 @@ export default function Skills() {
 						key={skill.category}
 						className="w-fit flex-auto basis-full sm:basis-1/3 md:basis-auto"
 					>
-						<h3 className="text-accent text-nowrap my-4">{skill.category}</h3>
+						<h3 className="text-accent whitespace-nowrap my-4">{skill.category}</h3>
 						{skill.skills.map((s: string) => (
 							<Skill key={s} skill={s} />
 						))}
