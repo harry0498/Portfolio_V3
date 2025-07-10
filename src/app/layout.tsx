@@ -10,7 +10,7 @@ const fontMono = JetBrains_Mono({
 	subsets: ['latin'],
 });
 
-export async function generateMetadata() {
+export function generateMetadata() {
 	const data = getData();
 
 	return {
