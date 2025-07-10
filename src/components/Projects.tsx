@@ -1,7 +1,7 @@
 import { getProjects } from '@/data/data';
 import Project from './Project';
 
-export default async function Projects() {
+export default function Projects() {
 	const projects = getProjects();
 
 	return (

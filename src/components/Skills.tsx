@@ -1,7 +1,7 @@
 import { getSkills } from '@/data/data';
 import Skill from './Skill';
 
-export default async function Skills() {
+export default function Skills() {
 	const skills = getSkills();
 
 	return (
