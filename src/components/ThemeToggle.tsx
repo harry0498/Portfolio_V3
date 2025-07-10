@@ -19,7 +19,7 @@ export default function ThemeToggle() {
 			onClick={() => setTheme(resolvedTheme === 'light' ? 'dark' : 'light')}
 		>
 			<svg
-				className="icon text-secondary"
+				className="icon text-secondary cursor-pointer"
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 512 512"
 			>
