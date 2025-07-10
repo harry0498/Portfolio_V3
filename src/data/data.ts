@@ -1,7 +1,5 @@
 import data from '@/data/data.json';
 
-const today = new Date();
-
 export function getData() {
 	return data;
 }
@@ -19,6 +17,8 @@ export function getProjects(): TProject[] {
 
 export function getExperienceYears(date: string): number {
 	const start = new Date(date);
+	const today = new Date();
+
 	return today.getFullYear() - start.getFullYear();
 }
 
