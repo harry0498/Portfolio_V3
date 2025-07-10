@@ -7,7 +7,7 @@ export default function About() {
 	const linuxYears = getExperienceYears(linuxStart);
 
 	return (
-		<div>
+		<main>
 			<h2 className="text-primary my-6">About_Me/</h2>
 			<div className="flex flex-col gap-y-6">
 				<p>
@@ -34,6 +34,6 @@ export default function About() {
 					it.
 				</p>
 			</div>
-		</div>
+		</main>
 	);
 }
