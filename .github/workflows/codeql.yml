@@ -38,7 +38,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm run build --if-present
+        run: pnpm build
 
       - name: Run CodeQL analysis
         uses: github/codeql-action/analyze@v3
