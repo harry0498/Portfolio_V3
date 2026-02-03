@@ -3,7 +3,7 @@ name: CodeQL
 on:
   pull_request:
   push:
-    branches: [staging]
+    branches: [main, staging]
   workflow_dispatch:
 
 permissions:
