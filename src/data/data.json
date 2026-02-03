@@ -8,26 +8,33 @@
   "projects": [
     {
       "title": "PkgMon",
-      "description": "System to monitor packages on Debian/Ubuntu-based servers.",
+      "description": "System to monitor packages on Debian/Ubuntu-based servers. Package versions are periodically queried against the NVD. Email notification alerts when new CVEs are detected. Allows filtering by package vulnerability status.",
       "git": "https://github.com/PkgMon/pkgmon",
       "url": "",
       "img": "pkgmon.png"
     }
   ],
   "skills": {
-    "Languages": ["Golang", "Python", "Bash", "C/C++", "Lua"],
-    "Web Dev": [
-      "JavaScript",
+    "Languages": [
       "TypeScript",
-      "PHP",
+      "JavaScript",
       "HTML",
-      "CSS",
-      "React",
-      "Angular"
+      "Golang",
+      "Python",
+      "Lua",
+      "Bash"
     ],
-    "Databases": ["MongoDB", "MySQL"],
-    "DevOps": ["Linux", "Proxmox", "Docker"],
-    "Version Control": ["Git", "GitHub"],
-    "Docs": ["LaTeX", "Markdown"]
+    "Frameworks": ["React", "Next.js", "Angular", "Express.js"],
+    "Styling": ["TailwindCSS", "Material UI", "Shadcn UI", "Bootstrap", "CSS"],
+    "Databases": ["PostgreSQL", "MongoDB", "MySQL"],
+    "DevOps": [
+      "Railway",
+      "Vercel",
+      "Proxmox",
+      "Docker",
+      "Linux",
+      "GitHub Actions"
+    ],
+    "Version Control": ["Git", "GitHub"]
   }
 }
