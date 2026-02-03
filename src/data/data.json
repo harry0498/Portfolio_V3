@@ -24,24 +24,9 @@
       "Lua",
       "Bash"
     ],
-    "Frameworks": [
-      "React",
-      "Next.js",
-      "Angular",
-      "Express.js"
-    ],
-    "Styling": [
-      "TailwindCSS",
-      "Material UI",
-      "Shadcn UI",
-      "Bootstrap",
-      "CSS"
-    ],
-    "Databases": [
-      "PostgreSQL",
-      "MongoDB",
-      "MySQL"
-    ],
+    "Frameworks": ["React", "Next.js", "Angular", "Express.js"],
+    "Styling": ["TailwindCSS", "Material UI", "Shadcn UI", "Bootstrap", "CSS"],
+    "Databases": ["PostgreSQL", "MongoDB", "MySQL"],
     "DevOps": [
       "Railway",
       "Vercel",
@@ -50,9 +35,6 @@
       "Linux",
       "GitHub Actions"
     ],
-    "Version Control": [
-      "Git",
-      "GitHub"
-    ]
+    "Version Control": ["Git", "GitHub"]
   }
 }
