@@ -1,106 +1,106 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
-	--color-text: #0c1806;
-	--color-background: #e9f8e2;
-	--color-primary: #37711e;
-	--color-secondary: #7adc8a;
-	--color-accent: #33c159;
+  --color-text: #0c1806;
+  --color-background: #e9f8e2;
+  --color-primary: #37711e;
+  --color-secondary: #7adc8a;
+  --color-accent: #33c159;
 }
 
 .dark {
-	--color-text: #edf9e7;
-	--color-background: #0e1d07;
-	--color-primary: #a7e18e;
-	--color-secondary: #238534;
-	--color-accent: #3ecc63;
+  --color-text: #edf9e7;
+  --color-background: #0e1d07;
+  --color-primary: #a7e18e;
+  --color-secondary: #238534;
+  --color-accent: #3ecc63;
 }
 
 * {
-	border: none;
+  border: none;
 }
 
 body {
-	@apply bg-background text-text text-base sm:text-2xl;
+  @apply bg-background text-text text-base sm:text-2xl;
 }
 
 @media (min-width: 640px) {
-	body {
-		font-size: 1.5rem;
-	}
+  body {
+    font-size: 1.5rem;
+  }
 }
 
 ::selection {
-	@apply bg-primary text-background;
+  @apply bg-primary text-background;
 }
 
 ::-webkit-scrollbar {
-	@apply w-2;
+  @apply w-2;
 }
 
 ::-webkit-scrollbar-track {
-	@apply bg-background;
+  @apply bg-background;
 }
 
 ::-webkit-scrollbar-thumb {
-	@apply bg-accent rounded-2xl;
+  @apply bg-accent rounded-2xl;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	@apply bg-primary;
+  @apply bg-primary;
 }
 
 p {
-	@apply leading-normal;
+  @apply leading-normal;
 }
 
 .icon {
-	@apply w-6 h-6 inline fill-current mr-4 align-middle;
+  @apply w-6 h-6 inline fill-current mr-4 align-middle;
 }
 
 h1,
 h2,
 h3,
 mark {
-	@apply font-bold;
+  @apply font-bold;
 }
 
 mark {
-	@apply bg-background text-primary;
+  @apply bg-background text-primary;
 }
 
 a {
-	@apply text-accent;
+  @apply text-accent;
 }
 
 h1 {
-	@apply text-4xl/snug sm:text-5xl/loose;
+  @apply text-4xl/snug sm:text-5xl/loose;
 }
 
 h2 {
-	@apply text-3xl sm:text-4xl;
+  @apply text-3xl sm:text-4xl;
 }
 
 h3 {
-	@apply text-xl sm:text-2xl;
+  @apply text-xl sm:text-2xl;
 }
 
 footer {
-	justify-content: center;
-	display: flex;
-	background-color: transparent !important;
+  justify-content: center;
+  display: flex;
+  background-color: transparent;
 }
 
 footer::before {
-	@apply absolute inset-0;
-	@apply bg-background opacity-80;
-	@apply z-0;
-	@apply top-0 left-0;
-	@apply w-full h-full;
-	content: '';
+  @apply absolute inset-0;
+  @apply bg-background opacity-80;
+  @apply z-0;
+  @apply top-0 left-0;
+  @apply w-full h-full;
+  content: "";
 }
 
 footer span {
-	color: var(--text);
-	z-index: 1;
+  color: var(--text);
+  z-index: 1;
 }
