@@ -1,30 +1,30 @@
-'use client';
+"use client";
 
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTheme } from "next-themes";
+import { useCallback, useEffect, useState } from "react";
 
 export default function ThemeToggle() {
-	const [mounted, setMounted] = useState(false);
-	const { setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const { setTheme, resolvedTheme } = useTheme();
 
-	useEffect(() => setMounted(true), []);
+  const toggleTheme = useCallback(() => {
+    setTheme(resolvedTheme === "light" ? "dark" : "light");
+  }, [resolvedTheme, setTheme]);
 
-	if (!mounted) {
-		return;
-	}
+  useEffect(() => setMounted(true), []);
 
-	return (
-		<div
-			id="theme-selector"
-			onClick={() => setTheme(resolvedTheme === 'light' ? 'dark' : 'light')}
-		>
-			{resolvedTheme === 'dark' ? (
-				<FontAwesomeIcon icon={faMoon} className="text-primary" />
-			) : (
-				<FontAwesomeIcon icon={faSun} className="text-primary" />
-			)}
-		</div>
-	);
+  if (!mounted) {
+    return;
+  }
+
+  return (
+    <button id="theme-selector" type="button" onClick={toggleTheme}>
+      <FontAwesomeIcon
+        icon={resolvedTheme === "dark" ? faMoon : faSun}
+        className="text-primary"
+      />
+    </button>
+  );
 }
