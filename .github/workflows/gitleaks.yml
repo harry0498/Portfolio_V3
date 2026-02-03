@@ -22,3 +22,5 @@ jobs:
 
       - name: Run Gitleaks
         uses: gitleaks/gitleaks-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
