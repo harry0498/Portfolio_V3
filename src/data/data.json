@@ -7,6 +7,13 @@
   "github": "https://github.com/harry0498",
   "projects": [
     {
+      "title": "Clockwork",
+      "description": "Built a time tracking and invoicing platform with Next.js 16, React 19, TypeScript, and PostgreSQL. Implemented secure auth with email/TOTP-based 2FA, rate-limited login, password reset flows, and JWT sessions via NextAuth.js. Developed customisable PDF invoice generation with live preview, dynamic footer, and full branding control. Designed a UK tax year-aware dashboard with analytics, client management, and billable hour tracking.",
+      "git": "https://github.com/harry0498/clockwork",
+      "url": "https://clockwork.harryj.dev",
+      "img": "clockwork.png"
+    },
+    {
       "title": "PkgMon",
       "description": "System to monitor packages on Debian/Ubuntu-based servers. Package versions are periodically queried against the NVD. Email notification alerts when new CVEs are detected. Allows filtering by package vulnerability status.",
       "git": "https://github.com/PkgMon/pkgmon",
@@ -26,15 +33,15 @@
     ],
     "Frameworks": ["React", "Next.js", "Angular", "Express.js"],
     "Styling": ["TailwindCSS", "Material UI", "Shadcn UI", "Bootstrap", "CSS"],
-    "Databases": ["PostgreSQL", "MongoDB", "MySQL"],
+    "Databases": ["PostgreSQL", "Drizzle-ORM", "MongoDB", "MySQL"],
     "DevOps": [
       "Railway",
       "Vercel",
       "Proxmox",
       "Docker",
       "Linux",
+      "Git",
       "GitHub Actions"
-    ],
-    "Version Control": ["Git", "GitHub"]
+    ]
   }
 }
