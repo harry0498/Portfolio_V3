@@ -15,13 +15,6 @@ export function getProjects(): TProject[] {
   return data.projects;
 }
 
-export function getExperienceYears(date: string): number {
-  const start = new Date(date);
-  const today = new Date();
-
-  return today.getFullYear() - start.getFullYear();
-}
-
 export type TProject = (typeof data.projects)[number];
 export type TSkill = {
   category: string;

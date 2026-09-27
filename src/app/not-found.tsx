@@ -2,14 +2,16 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="flex flex-col text-center w-[90%] place-self-center my-16">
-      <h1>
-        <mark>404 - Page Not Found</mark>
-      </h1>
-      <p>The page you are looking for could not be found.</p>
+    <main id="main-content" className="container not-found" tabIndex={-1}>
+      <p className="eyebrow">Error 404</p>
+      <h1>Path not found.</h1>
       <p>
-        <Link href="/">Click Here</Link> to return.
+        This page doesn’t exist. Head back to the portfolio to find my work and
+        contact details.
       </p>
+      <Link className="button button-primary" href="/">
+        Back to home
+      </Link>
     </main>
   );
 }

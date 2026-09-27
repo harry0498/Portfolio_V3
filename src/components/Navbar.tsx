@@ -1,16 +1,25 @@
-import { getData } from "@/data/data";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
-  const data = getData();
-
   return (
-    <nav className="p-4 sticky top-0 bg-background flex">
-      <h3 className="text-secondary grow">
-        <mark>{data.name.split(" ").join("@").toLowerCase()}</mark> ~/Portfolio
-        $
-      </h3>
-      <ThemeToggle />
-    </nav>
+    <div className="site-nav">
+      <nav className="container nav-inner" aria-label="Main navigation">
+        <a
+          href="/"
+          className="wordmark"
+          aria-label="harry@portfolio:~$, Harry Jenkins home"
+          translate="no"
+        >
+          harry<span>@</span>portfolio<span>:~$</span>
+        </a>
+        <div className="nav-links">
+          <a href="/#projects">Projects</a>
+          <a href="/#skills">Skills</a>
+          <a href="/#about">About</a>
+          <a href="/#contact">Contact</a>
+        </div>
+        <ThemeToggle />
+      </nav>
+    </div>
   );
 }

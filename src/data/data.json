@@ -1,6 +1,9 @@
 {
   "name": "Harry Jenkins",
-  "jobTitle": "Full Stack Developer",
+  "jobTitle": "DevOps Engineer",
+  "focus": "Platform engineering · Full-stack development",
+  "url": "https://www.harryj.dev",
+  "description": "Harry Jenkins is a DevOps Engineer with a platform and full-stack focus. Explore projects in Linux, automation, security, and web development.",
   "email": "contact@harryj.dev",
   "careerStart": "2020-08-20",
   "linuxStart": "2017-01-01",
@@ -8,40 +11,55 @@
   "projects": [
     {
       "title": "Clockwork",
-      "description": "Built a time tracking and invoicing platform with Next.js 16, React 19, TypeScript, and PostgreSQL. Implemented secure auth with email/TOTP-based 2FA, rate-limited login, password reset flows, and JWT sessions via NextAuth.js. Developed customisable PDF invoice generation with live preview, dynamic footer, and full branding control. Designed a UK tax year-aware dashboard with analytics, client management, and billable hour tracking.",
+      "slug": "clockwork",
+      "category": "Full-stack application",
+      "description": "A time tracking and invoicing platform that brings billable hours, clients, and UK tax year reporting into one place.",
+      "highlights": [
+        "Email and TOTP two-factor authentication, rate-limited login, and password recovery.",
+        "Customisable PDF invoices with live previews and branding controls."
+      ],
+      "technologies": ["Next.js", "TypeScript", "PostgreSQL"],
       "git": "https://github.com/harry0498/clockwork",
       "url": "https://clockwork.harryj.dev",
-      "img": "clockwork.png"
+      "img": "clockwork.png",
+      "imageAlt": "Clockwork dashboard showing tracked hours, earnings, a quick time entry form, and recent entries"
     },
     {
       "title": "PkgMon",
-      "description": "System to monitor packages on Debian/Ubuntu-based servers. Package versions are periodically queried against the NVD. Email notification alerts when new CVEs are detected. Allows filtering by package vulnerability status.",
+      "slug": "pkgmon",
+      "category": "Linux & security",
+      "description": "Package vulnerability monitoring for Debian and Ubuntu servers, with installed versions checked against the National Vulnerability Database.",
+      "highlights": [
+        "Email alerts when new CVEs are detected.",
+        "A central dashboard with filtering by package vulnerability status."
+      ],
+      "technologies": ["Linux", "ReactJS", "Debian / Ubuntu", "NVD"],
       "git": "https://github.com/PkgMon/pkgmon",
       "url": "",
-      "img": "pkgmon.png"
+      "img": "pkgmon.png",
+      "imageAlt": "PkgMon server summary showing monitored packages grouped by vulnerability status"
     }
   ],
   "skills": {
-    "Languages": [
-      "TypeScript",
-      "JavaScript",
-      "HTML",
-      "Golang",
-      "Python",
-      "Lua",
-      "Bash"
-    ],
-    "Frameworks": ["React", "Next.js", "Angular", "Express.js"],
-    "Styling": ["TailwindCSS", "Material UI", "Shadcn UI", "Bootstrap", "CSS"],
-    "Databases": ["PostgreSQL", "Drizzle-ORM", "MongoDB", "MySQL"],
-    "DevOps": [
-      "Railway",
-      "Vercel",
-      "Proxmox",
-      "Docker",
+    "Platform & DevOps": [
       "Linux",
+      "Docker",
+      "Proxmox",
+      "GitHub Actions",
+      "Bash",
       "Git",
-      "GitHub Actions"
+      "Railway",
+      "Vercel"
+    ],
+    "Languages": ["TypeScript", "JavaScript", "HTML", "Go", "Python", "Lua"],
+    "Frameworks": ["React", "Next.js", "Angular", "Express.js"],
+    "Databases": ["PostgreSQL", "Drizzle ORM", "MongoDB", "MySQL"],
+    "Interface & styling": [
+      "Tailwind CSS",
+      "Material UI",
+      "shadcn/ui",
+      "Bootstrap",
+      "CSS"
     ]
   }
 }

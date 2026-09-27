@@ -1,27 +1,27 @@
 import { getSkills } from "@/data/data";
-import Skill from "./Skill";
 
 export default function Skills() {
-  const skills = getSkills();
-
   return (
-    <div>
-      <h2 className="text-primary my-6">Skills/</h2>
-      <div className="flex flex-wrap flex-row grow gap-8 items-start justify-start">
-        {skills.map((skill) => (
-          <div
-            key={skill.category}
-            className="w-fit flex-auto basis-full sm:basis-1/3 md:basis-auto"
-          >
-            <h3 className="text-accent whitespace-nowrap my-4">
-              {skill.category}
-            </h3>
-            {skill.skills.map((s: string) => (
-              <Skill key={s} skill={s} />
-            ))}
+    <section id="skills" className="section" aria-labelledby="skills-heading">
+      <div className="section-heading">
+        <div>
+          <h2 id="skills-heading">
+            Skills<span aria-hidden="true">/</span>
+          </h2>
+        </div>
+      </div>
+      <div className="skills-grid">
+        {getSkills().map((skill) => (
+          <div className="skill-group" key={skill.category}>
+            <h3>{skill.category}</h3>
+            <ul className="skill-list">
+              {skill.skills.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
